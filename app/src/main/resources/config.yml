@@ -1,0 +1,28 @@
+# List of backend servers that this plugin will monitor.
+# If any of these servers stop unexpectedly, the player will be redirected.
+monitored-servers:
+  - survival
+  - rankup
+  - kitpvp
+
+redirect:
+  # List of fallback servers to redirect players to.
+  # The plugin will choose one based on the redirect mode.
+  servers:
+    - lobby1
+    - lobby2
+    - lobby3
+
+  # How the plugin chooses which redirect server to send players to:
+  # - "first": Always uses the first server in the list.
+  # - "least": Redirects to the server with the fewest players online.
+  # - "random": Picks a random server from the list.
+  mode: "first"
+
+  # Message shown to the player after they have been redirected.
+  # You can use color codes if your Velocity server supports them.
+  message: "You were redirected because the previous server went offline."
+
+  # How long to wait (in milliseconds) before redirecting the player.
+  # Useful if you want to give a delay for a smoother experience.
+  delay: 5000
