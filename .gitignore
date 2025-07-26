@@ -1,5 +1,57 @@
-# Ignore Gradle project-specific cache directory
-.gradle
+# Compiled class files
+*.class
 
-# Ignore Gradle build output directory
-build
+# Log files
+*.log
+
+# Kotlin metadata
+*.kjsm
+
+# Gradle
+.gradle/
+build/
+buildSrc/.gradle/
+buildSrc/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+.idea_modules/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/dictionaries/
+
+# JetBrains Fleet
+.fleet/
+
+# VS Code
+.vscode/
+
+# Local config
+local.properties
+
+# Distribution and generated files
+dist/
+generated/
+bin/
+*.jar
+*.war
+*.ear
+
+# System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.swp
+*~
+
+# Env files
+.env
+.env.*
